@@ -31,7 +31,7 @@ public class Main {
 
         System.out.println("Task 3");
 
-        int averageExpenses = 0;
+        double averageExpenses = 0;
 
         for (int i = 0; i < expenses.length; i++) {
             averageExpenses += expenses[i];
@@ -43,6 +43,12 @@ public class Main {
         System.out.println("Task 4");
 
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+
+        System.out.println("\nTask 4+");
 
         for (int i = 0; i < reverseFullName.length / 2; i++) {
             char temp = reverseFullName[i];
