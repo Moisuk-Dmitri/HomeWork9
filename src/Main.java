@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Task 1");
 
         int sum = 0;
-        int[] expenses = { 64500, 78000, 62000, 45100, 67000 };
+        int[] expenses = {64500, 78000, 62000, 45100, 67000};
 
         for (int i = 0; i < expenses.length; i++) {
             sum += expenses[i];
@@ -42,19 +42,10 @@ public class Main {
 
         System.out.println("Task 4");
 
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
-
-        System.out.println("\nTask 4+");
-
-        for (int i = 0; i < reverseFullName.length / 2; i++) {
-            char temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 -i];
-            reverseFullName[reverseFullName.length - 1 -i] = temp;
-        }
-        System.out.println(Arrays.toString(reverseFullName));
     }
 }
